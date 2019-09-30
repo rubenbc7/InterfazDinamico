@@ -1,0 +1,22 @@
+﻿<Window x:Class="InterfazDinamica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfazDinamica"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="btnGuardar">
+        <TextBlock HorizontalAlignment="Left" Margin="28,22,0,0" TextWrapping="Wrap" Text="Nuevo:" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="cbNueva" HorizontalAlignment="Left" Margin="92,22,0,0" VerticalAlignment="Top" Width="248" SelectionChanged="CbNueva_SelectionChanged">
+            <ComboBoxItem>Alumno</ComboBoxItem>
+            <ComboBoxItem>Maestro</ComboBoxItem>
+        </ComboBox>
+               <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="554,14,0,0" VerticalAlignment="Top" Width="125" Height="38" FontSize="16" Click="BtnAgregar_Click"/>
+
+        <Grid x:Name="grdParametros" HorizontalAlignment="Left" Height="261" Margin="92,78,0,0" VerticalAlignment="Top" Width="587"/>
+        <Button Visibility="Hidden" x:Name="btnGuardar1" Content="Guardar" HorizontalAlignment="Left" Margin="461,362,0,0" VerticalAlignment="Top" Width="125" Height="38" FontSize="16" Click="BtnGuardar1_Click"/>
+        <Button Visibility="Hidden" x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="611,362,0,0" VerticalAlignment="Top" Width="125" Height="38" FontSize="16" Click="BtnCancelar_Click"/>
+
+    </Grid>
+</Window>
